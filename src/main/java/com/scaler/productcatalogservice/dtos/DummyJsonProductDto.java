@@ -12,5 +12,5 @@ public class DummyJsonProductDto {
     private String description;
     private String category;
     private String thumbnail;
-    private Double price;
+    private BigDecimal price;
 }

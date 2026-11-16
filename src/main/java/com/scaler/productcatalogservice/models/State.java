@@ -1,6 +1,6 @@
 package com.scaler.productcatalogservice.models;
 
 public enum State {
-    ACTIVE,
-    INACTIVE
+    ACTIVE, // 0
+    INACTIVE // 1
 }
