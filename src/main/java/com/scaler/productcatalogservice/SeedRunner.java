@@ -29,13 +29,14 @@ public class SeedRunner implements CommandLineRunner {
         product.setName("Essence Mascara Lash Princess");
         product.setDescription("A popular mascara");
         product.setPrice(new BigDecimal("9.99"));
+        product.setState(State.ACTIVE);
         product.setCategory(category);
 
-        Product saved = productRepository.save(product);
-        System.out.println("Saved with id " + saved.getId());
-
-        Product found = productRepository.findById(saved.getId()).orElseThrow();
-        System.out.println("Found: " + found.getName() + " costs " + found.getPrice()
-                + " in " + found.getCategory().getName());
+//        Product saved = productRepository.save(product);
+//        System.out.println("Saved with id " + saved.getId());
+//
+//        Product found = productRepository.findById(saved.getId()).orElseThrow();
+//        System.out.println("Found: " + found.getName() + " costs " + found.getPrice()
+//                + " in " + found.getCategory().getName());
     }
 }

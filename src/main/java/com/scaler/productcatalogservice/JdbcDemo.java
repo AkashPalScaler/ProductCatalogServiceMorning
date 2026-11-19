@@ -1,7 +1,7 @@
 package com.scaler.productcatalogservice;
 
 import com.scaler.productcatalogservice.models.Product;
-import com.scaler.productcatalogserviceevening.models.Product;
+
 
 import java.sql.*;
 
@@ -22,7 +22,7 @@ public class JdbcDemo {
                     Product product = new Product();
                     product.setId(rs.getLong("id"));
                     product.setName(rs.getString("name"));
-                    product.setPrice(rs.getDouble("price"));
+//                    product.setPrice(rs.getDouble("price"));
                     System.out.println(product.getName() + " costs " + product.getPrice());
                 }
             } catch (SQLException e) {
